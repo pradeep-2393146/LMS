@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --background-color: #f8f9fa;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --canvas-background: #ffffff; /* Add this line */
+}
+
+body {
+  padding-top: 70px;
+  background-color: var(--background-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  border-radius: 0;
+}
+
+.display-4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Course Cards Styling */
+.course-heading {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.course-heading:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.btn-success {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Progress Bar Styling */
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.shiny-progress-bar {
+  background: linear-gradient(45deg, var(--secondary-color), #2ecc71);
+  background-size: 200% 200%;
+  animation: shiny 2s linear infinite;
+}
+
+/* Canvas Section Styling */
+.canvas-div {
+  background-color: var(--canvas-background)t;
+  border-radius: 15px;
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+.canvas-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.canvas-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--primary-color) !important;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+@keyframes shiny {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+#myChart {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
